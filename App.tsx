@@ -4,6 +4,7 @@ import Explore from './screens/explore'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ContactList from './lessons/ContactList';
+import ImageLibrarySample from './lessons/ImageLibrarySample';
 
 const Tab = createBottomTabNavigator();
 
@@ -11,7 +12,8 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <ContactList />
+      <ImageLibrarySample />
+      {/* <ContactList /> */}
       {/* <SafeAreaView style={styles.container}>
       <Tab.Navigator>
         <Tab.Screen name="Home" component={Explore} />
