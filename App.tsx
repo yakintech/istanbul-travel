@@ -3,6 +3,7 @@ import React from 'react'
 import Explore from './screens/explore'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import ContactList from './lessons/ContactList';
 
 const Tab = createBottomTabNavigator();
 
@@ -10,12 +11,13 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <SafeAreaView style={styles.container}>
+      <ContactList />
+      {/* <SafeAreaView style={styles.container}>
       <Tab.Navigator>
         <Tab.Screen name="Home" component={Explore} />
         <Tab.Screen name="Settings" component={Settings} />
       </Tab.Navigator>
-      </SafeAreaView>
+      </SafeAreaView> */}
     </NavigationContainer>
 
   )
