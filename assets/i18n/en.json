@@ -1,0 +1,8 @@
+{
+    "translation": {
+        "hello": "Hello",
+        "name":"Name",
+        "unitprice":"Unit Price",
+        "stock": "Stock"
+    }
+}

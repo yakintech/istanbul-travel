@@ -5,22 +5,29 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ContactList from './lessons/ContactList';
 import ImageLibrarySample from './lessons/ImageLibrarySample';
+import Dashboard from './lessons/multiLanguage/Dashboard';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import ProductDetail from './lessons/multiLanguage/ProductDetail';
+
 
 const Tab = createBottomTabNavigator();
+
+const Stack = createNativeStackNavigator();
+
 
 const App = () => {
 
   return (
-    <NavigationContainer>
-      <ImageLibrarySample />
-      {/* <ContactList /> */}
-      {/* <SafeAreaView style={styles.container}>
-      <Tab.Navigator>
-        <Tab.Screen name="Home" component={Explore} />
-        <Tab.Screen name="Settings" component={Settings} />
-      </Tab.Navigator>
-      </SafeAreaView> */}
+ 
+ <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Dashboard" component={Dashboard} />
+        <Stack.Screen name="Detail" component={ProductDetail} />
+
+      </Stack.Navigator>
     </NavigationContainer>
+
+
 
   )
 }
